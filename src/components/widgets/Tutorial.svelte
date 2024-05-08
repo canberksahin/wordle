@@ -5,53 +5,38 @@
 	export let visible: boolean;
 </script>
 
-<h3>how to play</h3>
-<div>Guess the <strong>WORDLE</strong> in {ROWS} tries.</div>
-<div>Each guess must be a valid {COLS} letter word. Hit the enter button to submit.</div>
+<h3>Nasıl Oynanır</h3>
+<div>Kelimeyi {ROWS} denemede <strong>KELİME</strong> etmeye çalışın.</div>
+<div>Her tahmin geçerli bir {COLS} harfli kelime olmalıdır. Göndermek için enter tuşuna basın.</div>
 <div>
-	After each guess, the color of the tiles will change to show how close your guess was to the
-	word.
+	Her tahminden sonra, taşların rengi, tahmininizin kelimeye ne kadar yakın olduğunu göstermek için değişir.
 </div>
 <div class:complete={visible} class="examples">
-	<div><strong>Examples</strong></div>
+	<div><strong>Örnekler</strong></div>
 	<div class="row">
-		<Tile value="w" state="🟩" />
-		<Tile value="e" state="🔳" />
+		<Tile value="k" state="🟩" />
 		<Tile value="a" state="🔳" />
-		<Tile value="r" state="🔳" />
-		<Tile value="y" state="🔳" />
+		<Tile value="l" state="🔳" />
+		<Tile value="e" state="🔳" />
+		<Tile value="m" state="🔳" />
 	</div>
-	<div>The letter <strong>W</strong> is in the word and in the correct spot.</div>
+	<div>Harf <strong>K</strong> kelimenin içinde ve doğru yerde.</div>
 	<div class="row">
-		<Tile value="p" state="🔳" />
+		<Tile value="k" state="🔳" />
 		<Tile value="i" state="🟨" />
-		<Tile value="l" state="🔳" />
-		<Tile value="l" state="🔳" />
-		<Tile value="s" state="🔳" />
-	</div>
-	<div>The letter <strong>I</strong> is in the word but in the wrong spot.</div>
-	<div class="row">
-		<Tile value="v" state="🔳" />
+		<Tile value="t" state="🔳" />
 		<Tile value="a" state="🔳" />
-		<Tile value="g" state="🔳" />
-		<Tile value="u" state="⬛" />
-		<Tile value="e" state="🔳" />
+		<Tile value="p" state="🔳" />
 	</div>
-	<div>The letter <strong>U</strong> is not in the word in any spot.</div>
-</div>
-<div>
-	This is a recreation of the original <a
-		href="https://www.nytimes.com/games/wordle/"
-		target="_blank"
-		rel="noreferrer">Wordle</a
-	>
-	by Josh Wardle with additional modes and features, allowing you to play infinite wordles. Switch
-	to infinite mode to play an unlimited number of times.
-	<br /><br />
-	Open the settings menu to see some of the additional features.
-	<br />
-	Written with Svelte, in Typescript by
-	<a href="https://github.com/MikhaD" target="_blank" rel="noreferrer">MikhaD</a>.
+	<div>Harf <strong>İ</strong> kelimenin içinde ancak yanlış yerde.</div>
+	<div class="row">
+		<Tile value="ç" state="🔳" />
+		<Tile value="a" state="🔳" />
+		<Tile value="t" state="🔳" />
+		<Tile value="a" state="⬛" />
+		<Tile value="l" state="🔳" />
+	</div>
+	<div>Harf <strong>A</strong> kelimenin hiçbir yerinde değil.</div>
 </div>
 
 <style lang="scss">

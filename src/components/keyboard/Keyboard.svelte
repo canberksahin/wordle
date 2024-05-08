@@ -24,7 +24,7 @@
 	function handleKeystroke(e: KeyboardEvent) {
 		if (e.defaultPrevented) return;
 		if (!disabled && !e.ctrlKey && !e.altKey) {
-			if (e.key && /^[a-z]$/.test(e.key.toLowerCase())) {
+			if (e.key && /^[a-zğüşıöç]$/.test(e.key.toLowerCase())) {
 				return appendValue(e.key.toLowerCase());
 			}
 			if (e.key === "Backspace") return backspaceValue();
@@ -64,6 +64,7 @@
 		{/each}
 	</div>
 	<div class="row">
+		
 		<Key letter="ENTER" on:keystroke={() => !disabled && dispatch("submitWord")} />
 		{#each keys[2] as letter}
 			<Key

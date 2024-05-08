@@ -26,44 +26,40 @@
 	}
 </script>
 
-<!-- not currently supported, see https://github.com/sveltejs/svelte/issues/3105 -->
-<!-- <svelte:body class:light={!$settings.dark} class:colorblind={$settings.colorblind} /> -->
 <div class="outer">
 	<div class="settings-top">
-		<h3>settings</h3>
-		<!-- svelte-ignore a11y-click-events-have-key-events -->
+		<h3>ayarlar</h3>
 		<div
 			on:click={() => {
 				if (!state.validHard) {
-					toaster.pop("Game has already violated hard mode");
+					toaster.pop("Oyun zaten zor modu ihlal etti");
 				}
 			}}
 		>
 			<Setting type="switch" bind:value={$settings.hard[$mode]} disabled={!state.validHard}>
-				<svelte:fragment slot="title">Hard Mode</svelte:fragment>
+				<svelte:fragment slot="title">Zor Mod</svelte:fragment>
 				<svelte:fragment slot="desc">
-					Any revealed hints must be used in subsequent guesses
+					Açığa çıkarılan ipuçları sonraki tahminlerde kullanılmalıdır
 				</svelte:fragment>
 			</Setting>
 		</div>
 		<Setting type="switch" bind:value={$settings.dark}>
-			<svelte:fragment slot="title">Dark Theme</svelte:fragment>
+			<svelte:fragment slot="title">Karanlık Tema</svelte:fragment>
 		</Setting>
 		<Setting type="switch" bind:value={$settings.colorblind}>
-			<svelte:fragment slot="title">Color Blind Mode</svelte:fragment>
-			<svelte:fragment slot="desc">High contrast colors</svelte:fragment>
+			<svelte:fragment slot="title">Renk Körü Modu</svelte:fragment>
+			<svelte:fragment slot="desc">Yüksek kontrast renkler</svelte:fragment>
 		</Setting>
 		<Setting type="dropdown" bind:value={$mode} options={modeData.modes.map((e) => e.name)}>
-			<svelte:fragment slot="title">Game Mode</svelte:fragment>
+			<svelte:fragment slot="title">Oyun Modu</svelte:fragment>
 			<svelte:fragment slot="desc">
-				The game mode determines how often the word refreshes
+				Oyun modu, kelimenin ne sıklıkta yenileneceğini belirler
 			</svelte:fragment>
 		</Setting>
-		<!-- svelte-ignore a11y-click-events-have-key-events -->
 		<Setting type="custom" bind:value={$mode}>
-			<svelte:fragment slot="title">Play Historical Game</svelte:fragment>
+			<svelte:fragment slot="title">Geçmiş Oyunu Oyna</svelte:fragment>
 			<svelte:fragment slot="desc">
-				Play a previous word by pasting in a link or setting the date number
+				Bir önceki kelimeyi bir bağlantı yapıştırarak veya tarih numarasını ayarlayarak oynayın
 			</svelte:fragment>
 			<svelte:fragment slot="custom">
 				<svg
@@ -78,14 +74,6 @@
 				</svg>
 			</svelte:fragment>
 		</Setting>
-		<div class="links">
-			<a href="https://github.com/MikhaD/wordle" target="_blank" rel="noreferrer">
-				Leave a ⭐
-			</a>
-			<a href="https://github.com/MikhaD/wordle/issues" target="_blank" rel="noreferrer">
-				Report a Bug
-			</a>
-		</div>
 	</div>
 </div>
 

@@ -241,24 +241,7 @@
 	{/if}
 	<Tips change={showSettings} />
 
-	<svelte:fragment slot="footer">
-		<a href="https://www.nytimes.com/games/wordle/" target="_blank" rel="noreferrer"
-			>Original Wordle</a
-		>
-		<div>
-			<div>v{version}</div>
-			<div
-				title="double click to reset your stats"
-				class="word"
-				on:dblclick={() => {
-					localStorage.clear();
-					toaster.pop("localStorage cleared");
-				}}
-			>
-				{modeData.modes[$mode].name} word #{game.wordNumber}
-			</div>
-		</div>
-	</svelte:fragment>
+
 </Modal>
 
 <Modal bind:visible={showHistorical}>

@@ -1,16 +1,16 @@
 <script context="module" lang="ts">
 	const tips = [
-		"You can change the gamemode by clicking WORDLE+ or swiping the board left or right.",
-		"Hard mode is game mode specific. Turning it on in one game mode won't change it on the others.",
-		"Double tap or right click a word on the board to learn its definition.",
-		"Hard mode can be enabled during a game if you haven't violated the hard mode rules yet.",
-		"Double tap or right click the next row to see how many possible words can be played there, if you use all the previous information.",
-		"Because words are chosen from the list randomly it is possible to get the same word again.",
-		"When you see the refresh button in the top left corner it means a new word is ready.",
-		"Everyone has the same wordle at the same time. Your word #73 is the same as everyone elses #73.",
-		"There are more valid guesses than possible words, ie. not all 5 letter words can be selected as an answer by the game.",
-		"Historical games don't count towards your stats. Historical games are when you follow a link to a specific game number.",
-		"Only the data for latest historical game is saved for each game mode.",
+		"KELİME+'ya tıklayarak veya tahtayı sağa sola kaydırarak oyun modunu değiştirebilirsiniz.",
+		"Zor mod, oyun moduna özeldir. Bir oyun modunda açarsanız diğerlerinde değişmeyecektir.",
+		"Tahtadaki bir kelimenin anlamını öğrenmek için üzerine çift dokunun veya sağ tıklayın.",
+		"Zor mod, zor mod kurallarını henüz ihlal etmediyseniz bir oyunda etkinleştirilebilir.",
+		"Önceki tüm bilgileri kullanarak orada kaç olası kelimenin oynanabileceğini görmek için bir sonraki satıra çift dokunun veya sağ tıklayın.",
+		"Kelimeler rastgele olarak listeden seçildiğinden, aynı kelimeyi tekrar almak mümkündür.",
+		"Sol üst köşede yenileme düğmesini gördüğünüzde, yeni bir kelimenin hazır olduğu anlamına gelir.",
+		"Herkes aynı anda aynı kelimeleri alır. Sizin kelime #73'ünüz, herkesin #73'üyle aynıdır.",
+		"Mümkün olan tüm 5 harfli kelimelerin seçilebileceği doğru tahminlerden daha fazla geçerli tahmin vardır.",
+		"Geçmiş oyunlar istatistiklerinize dahil edilmez. Geçmiş oyunlar, belirli bir oyun numarasına bir bağlantı takip ettiğinizde ortaya çıkar.",
+		"Her oyun modu için en son geçmiş oyunun verileri yalnızca kaydedilir.",
 	];
 </script>
 

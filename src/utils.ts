@@ -130,7 +130,7 @@ export function contractNum(n: number) {
 	}
 }
 
-export const keys = ["qwertyuiop", "asdfghjkl", "zxcvbnm"];
+export const keys = ["qwertyuiopğü", "asdfghjklşi", "zxcvbnmöç"];
 
 /**
  * Return a deterministic number based on the given mode and current or given time.
@@ -423,6 +423,11 @@ export class LetterStates {
 	public x: LetterState = "🔳";
 	public y: LetterState = "🔳";
 	public z: LetterState = "🔳";
+	public ü: LetterState = "🔳";
+	public ğ: LetterState = "🔳";
+	public ç: LetterState = "🔳";
+	public ş: LetterState = "🔳";
+	public ı: LetterState = "🔳";
 
 	constructor(board?: GameBoard) {
 		if (board) {
